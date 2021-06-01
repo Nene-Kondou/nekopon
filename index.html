@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
     <div class="header-logo">
-      <h1><a href="#">PON DESIGN</a></h1>
+      <a href="#">PON DESIGN</a>
     </div>
     <div class="header-nav is-pc">
       <ul class="header-nav-list">
@@ -23,37 +25,132 @@
     </div>
   </header>
   <div class="top">
-
+    <h1 class="top-title">WEB DESIGN SPECIALIST</h1>
+    <p class="top-text">お客様の夢を叶えるWebサイトを制作</p>
+    <div class="top-btn"><a href="contact">CONTACT</a></div>
   </div>
   <main>
     <section class="news" id="news">
-
+      <div class="news-title-box">
+        <h3 class="news-title">NEWS</h2>
+        <p class="news-text">お知らせ</p>
+      </div>
+      <div class="news-list">
+        <li class="news-item">
+          <a href="#">
+            <div class="news-meta">
+              <p class="news-date">2030.02.01</p>
+              <p class="news-tag">お知らせ</p>
+            </div>
+            <p class="news-text">Webデザインニュースサイト「ウェブマガジン」に取材いただきました</p>
+          </a>
+        </li>
+        <li class="news-item">
+          <a href="#">
+            <div class="news-meta">
+              <p class="news-date">2030.01.25</p>
+              <p class="news-tag">制作実績</p>
+            </div>
+            <p class="news-text">Smoothiesta様のWebサイトを制作いたしました</p>
+          </a>
+        </li>
+        <li class="news-item">
+          <a href="#">
+            <div class="news-meta">
+              <p class="news-date">2030.01.20</p>
+              <p class="news-tag">採用</p>
+            </div>
+            <p class="news-text">Webデザイナーを１名募集中です！</p>
+          </a>
+        </li>
+      </div>
     </section>
     <!-- ./news -->
     <section class="service" id="service">
-
+      <div class="section">
+        <h2 class="section-title">SERVICE</h2>
+        <p class="section-text">事業内容</p>
+      </div>
+      <div class="service-content">
+        <ul class="service-list">
+          <li class="service-item">
+            <img src="./img/service1.jpg" alt="">
+            <p class="service-title">Webサイト制作</p>
+            <p class="service-text">新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</p>
+          </li>
+          <li class="service-item">
+            <img src="./img/service2.jpg" alt="">
+            <p class="service-title">Webサイト運用</p>
+            <p class="service-text">サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案をいたします。</p>
+          </li>
+          <li class="service-item">
+            <img src="./img/service3.jpg" alt="">
+            <p class="service-title">アプリ開発</p>
+            <p class="service-text">スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。</p>
+          </li>
+        </ul>
+        <div class="util-btn"><a href="#">MORE</a></div>
+      </div>
     </section>
     <!-- ./service -->
     <section class="works" id="works">
-
+      <div class="work-slider">
+        <img src="./img/works.jpg" alt="">
+      </div>
+      <div class="work-box">
+        <h2 class="section-title">WORKS</h2>
+        <p class="section-text">制作実績</p>
+        <p class="work-text">様々なジャンルのWebサイト制作が可能です。<br>ご購入やお申込み数の増加などを実現します！</p>
+        <div class="util-btn"><a href="#">MORE</a></div>
+      </div>
     </section>
     <!-- ./works -->
     <section class="company" id="company">
-
+      <h2 class="section-title">COMPANY</h2>
+      <p class="section-text">私たちについて</p>
+      <h2 class="company-title">サイトのゴール = 夢を叶えること</h2>
+      <p class="company-text">お客様の夢を叶えること。<br>
+        それがWebサイトのゴールであり、私たちが目指すことです。<br>
+        だからこそちゃんと成果を出すサイトを全力でお作りします。<br>
+        お客様の笑顔を見たい。<br>
+        夢を実現する手助けをさせてください。</p>
+        <div class="util-btn"><a href="#">MORE</a></div>
     </section>
     <!-- ./company -->
     <section class="recruit" id="recruit">
-
+      <div class="section">
+        <h2 class="section-title">RECRUIT</h2>
+        <p class="section-text">採用情報</p>
+        <p class="company-text">私たちと一緒に働きませんか？</p>
+        <div class="util-btn"><a href="#">MORE</a></div>
+      </div>
+      <img src="./img/recruit.jpg" alt="">
     </section>
     <!-- ./recruit -->
     <section class="contact" id="contact">
-
+      <h2 class="section-title">CONTACT</h2>
+      <p class="section-text">お問い合わせ</p>
+      <p class="cotact-text">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
+      <div class="util-btn"><a href="#">MORE</a></div>
     </section>
     <!-- ./contact -->
   </main>
   <footer class="footer">
-
+    <div class="footer-nav">
+      <ul class="footer-nav-list">
+        <li><a href="news">NEWS</a></li>
+        <li><a href="service">SERVICE</a></li>
+        <li><a href="works">WORKS</a></li>
+        <li><a href="company">COMPANY</a></li>
+        <li><a href="recuruit">RECRUIT</a></li>
+        <li><a href="contact">CONTACT</a></li>
+      </ul>
+    </div>
+    <p>&copy;PON DESIGN</p>
   </footer>
   
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
 </body>
 </html>
