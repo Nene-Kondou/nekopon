@@ -72,3 +72,45 @@ body {
   padding: 21px 77px;
   border-radius: 50px;
 }
+
+.inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 40px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  color: #fff;
+}
+
+.header-logo a {
+  display: block;
+  font-size: 19px;
+  font-weight: bold;
+  color: inherit;
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+.header-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-nav-list li:not(:first-child) {
+  margin-left: 25px;
+}
+
+.header-nav-list li a {
+  display: block;
+  color: inherit;
+}

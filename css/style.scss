@@ -2,6 +2,13 @@
 
 $font-color: #333333;
 $accent-color: #391E88;
+$layout-width-inner: 1300px;
+
+$breakpoints: (
+  "sp": "screen and (max-width: 767px)",
+  "tab": "screen and (max-width: #{$layout-width-inner - 1px})",
+  "pc": "screen and (min-width: #{$layout-width-inner})",
+);
 
 /*==========================================================================
 # reset - ブラウザの差異や不要なスタイルを無くすためのスタイル
@@ -76,5 +83,48 @@ body {
     padding: 21px 77px;
     border-radius: 50px;
 
+  }
+}
+
+.inner {
+  max-width: $layout-width-inner;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: content-box;
+}
+
+
+// header
+.header {
+  display: flex;
+  padding: 30px;
+  color: #fff;
+}
+
+.header-logo {
+  a {
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    color: inherit;
+  }
+}
+
+.header-nav {
+  margin-left: auto;
+}
+
+.header-nav-list {
+  display: flex;
+
+  li {
+    &:not(:first-child) {
+      margin-left: 25px;
+    }
+    
+    a {
+      display: block;
+      color: inherit;
+    }
   }
 }
