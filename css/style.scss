@@ -1,4 +1,7 @@
-@charset "UTF-8";
+@charset "utf-8";
+
+$font-color: #333333;
+$accent-color: #391E88;
 
 /*==========================================================================
 # reset - ブラウザの差異や不要なスタイルを無くすためのスタイル
@@ -43,25 +46,35 @@ a {
   text-decoration: none;
 }
 
-
-$breakpoints: (
-  "sp": "screen and (max-width: 767px)",
-  "tab": "screen and (max-width: #{$layout-width-inner - 1px})",
-  "pc": "screen and (min-width: #{$layout-width-inner})",
-);
-
-@mixin mq($breakpoint: sp) {
-  @media #{map-get($breakpoints, $breakpoint)} {
-    @content;
-  }
+body {
+  font-size: 15px;
+  font-family: Montserrat, "ヒラギノ角ゴシック", sans-serif;
 }
 
-.inner {
-  margin: 0 auto;
-  padding: 0 40px;
-  box-sizing: content-box;
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: $accent-color;
+  letter-spacing: 1.5px;
+}
 
-  @include mq(sp) {
-    padding: 0 15px;
+.section-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: $accent-color;
+  letter-spacing: 1.5px;
+  margin-top: 5px;
+}
+
+.util-btn {
+  a {
+    display: inline-block;
+    background: linear-gradient(to right, rgb(118, 51, 164), $accent-color);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 21px 77px;
+    border-radius: 50px;
+
   }
 }

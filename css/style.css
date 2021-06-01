@@ -41,3 +41,34 @@ a {
   cursor: pointer;
   text-decoration: none;
 }
+
+body {
+  font-size: 15px;
+  font-family: Montserrat, "ヒラギノ角ゴシック", sans-serif;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #391E88;
+  letter-spacing: 1.5px;
+}
+
+.section-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #391E88;
+  letter-spacing: 1.5px;
+  margin-top: 5px;
+}
+
+.util-btn a {
+  display: inline-block;
+  background: -webkit-gradient(linear, left top, right top, from(#7633a4), to(#391E88));
+  background: linear-gradient(to right, #7633a4, #391E88);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 21px 77px;
+  border-radius: 50px;
+}
