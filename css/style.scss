@@ -5,7 +5,7 @@ $accent-color: #391E88;
 
 $breakpoints: (
   "sp": "screen and (max-width: 767px)",
-  "pc": "screen and (min-width: 1180px)",
+  "pc": "screen and (min-width: 768px)",
 );
 
 @mixin mq($breakpoint: sp) {
@@ -39,7 +39,6 @@ $breakpoints: (
 
 html, body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td, small, button, time, figure {
   border: 0;
-  font: inherit;
   font-size: 100%;
   margin: 0;
   padding: 0;
@@ -240,7 +239,7 @@ body {
 }
 
 .top-text {
-  margin-top: 22px;
+  margin: 22px 0 0;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -269,43 +268,81 @@ body {
 
 // news
 .news {
-  width: 917px;
-  max-width: 100%;
   margin: auto;
-  display: flex;
   margin-top: 70px;
   color: #333;
+  padding: 0 20px;
+  
+  @include mq(pc) {
+    display: flex;
+    width: 917px;
+    max-width: 100%;
+  }
 }
 
 .news-title-box {
-  flex: 0 0 170px;
+  @include mq(pc) {
+    flex: 0 0 170px;
+  }
 }
 
 .news-title {
   font-size: 36px;
   font-weight: bold;
   color: $accent-color;
+  
+  @include mq(sp) {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+.news-title-text {
+  margin-top: 5px;
+  color: $accent-color;
+  font-size: 13px;
+  font-weight: bold;
+
+  @include mq(sp) {
+    text-align: center;
+  }
 }
 
 .news-text {
   font-size: 13px;
   color: $accent-color;
   margin-top: 5px;
+
+  @include mq(sp) {
+    text-align: center;
+  }
 }
 
 .news-list {
-  flex: 0 1 100%;
+  @include mq(pc) {
+    flex: 0 1 100%;
+  }
+
+  @include mq(sp) {
+    margin-top: 32px;
+  }
 
   li {
     &:not(:first-child) {
       margin-top: 15px;
+
+      @include mq(sp) {
+        margin-top: 40px;
+      }
     }
   }
 }
 
 .news-item {
-  display: flex;
-  align-items: center;
+  @include mq(pc) {
+    display: flex;
+    align-items: center;
+  }
   color: #333;
 }
 
@@ -327,10 +364,20 @@ body {
   padding:  5px 0;
   text-align: center;
   margin-left: 20px;
+
+  @include mq(sp) {
+    margin-left: 15px;
+  }
 }
 
 .news-text {
   color: #333;
-  margin: 0 0 0 20px;
   letter-spacing: 1.5px;
+  margin: 0 0 0 20px;
+  line-height: 1.928571;
+
+  @include mq(sp) {
+    margin: 10px 0 0 0;
+    text-align-last: left;
+  }
 }
