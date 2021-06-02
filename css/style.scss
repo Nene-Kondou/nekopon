@@ -402,12 +402,27 @@ body {
 }
 
 .service-list {
-  display: flex;
-  justify-content: space-between;
+  padding: 0 20px;
+  box-sizing: content-box;
+
+  @include mq(pc) {
+    display: flex;
+  }
 }
 
 .service-item {
-  flex: 0 1 350px;
+  @include mq(pc) {
+    flex: 0 1 350px;
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+  }
+
+  @include mq(sp) {
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+  }
 
   img {
     width: 100%;
@@ -427,9 +442,17 @@ body {
   .service-text {
     line-height: 1.8;
     margin-top: 17px;
+
+    @include mq(sp) {
+      margin-top: 10px;
+    }
   }
 }
 
 .service-btn {
   text-align: center;
+
+  @include mq(sp) {
+    display: none;
+  }
 }
