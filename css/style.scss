@@ -75,13 +75,13 @@ a {
 body {
   font-size: 15px;
   font-family: Montserrat, "ヒラギノ角ゴシック", sans-serif;
+  letter-spacing: 1.05px;
 }
 
 .section-title {
   font-size: 36px;
   font-weight: bold;
   color: $accent-color;
-  letter-spacing: 1.5px;
 }
 
 .section-text {
@@ -101,7 +101,7 @@ body {
     font-weight: bold;
     padding: 21px 77px;
     border-radius: 50px;
-
+    margin-top: 30px;
   }
 }
 
@@ -380,4 +380,56 @@ body {
     margin: 10px 0 0 0;
     text-align-last: left;
   }
+}
+
+// service
+.service {
+  margin-top: 80px;
+  
+  @include mq(pc) {
+    margin: 140px auto 0;
+    width: 1110px;
+    max-width: 100%;
+  }
+}
+
+.section-service {
+  text-align: center;
+}
+
+.service-content {
+  margin-top: 30px;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-item {
+  flex: 0 1 350px;
+
+  img {
+    width: 100%;
+  }
+
+  .service-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 24px;
+
+    @include mq(sp) {
+      margin-top: 14px;
+    }
+  }
+
+  .service-text {
+    line-height: 1.8;
+    margin-top: 17px;
+  }
+}
+
+.service-btn {
+  text-align: center;
 }
