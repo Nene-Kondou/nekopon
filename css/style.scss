@@ -660,8 +660,18 @@ body {
   margin-top: 100px;
   text-align: center;
   padding: 80px 0;
+
+  @include mq(sp) {
+    margin-top: 80px;
+  }
 }
 
-.cotact-text {
+.contact-text {
   margin-top: 35px;
+
+  @include mq(sp) {
+    width: 78.933333%;
+    margin: 30px auto 0;
+    font-size: 14px;
+  }
 }
