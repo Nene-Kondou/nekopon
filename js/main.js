@@ -26,4 +26,15 @@ $(document).ready(function() {
     $('.drawer-content-cover').toggleClass('is-active');
     return false;
   });
+
+  $('.work-slider').slick({
+    dots: true,
+    infinite: true,
+    speed: 2000,
+    // slidesToShow: 1,
+    // adaptiveHeight: true,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 4000,
+ });
 });
