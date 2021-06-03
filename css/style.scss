@@ -603,18 +603,27 @@ body {
 
 // recruit
 .recruit {
-  width: 1110px;
-  max-width: 100%;
-  display: flex;
-  margin: auto;
-  top: 0;
-  background: #F7F7F7;
+  @include mq(pc) {
+    width: 1110px;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .section-recruit {
-  position: relative;
+  background: #F7F7F7;
   text-align: center;
-  width: 40.454545%;
+  position: relative;
+
+  @include mq(pc) {
+    width: 40.454545%;
+  }
+
+  @include mq(sp) {
+    height: 300px;
+  }
 }
 
 .recruit-content {
@@ -622,12 +631,26 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
+  width: 100%;
 }
 
 .recruit-text {
   margin-top: 30px;
+
+  @include mq(sp) {
+    font-size: 14px;
+  }
 }
 
 .recruit-picture {
-  width: 60.454545%;
+  @include mq(pc) {
+    width: 60.454545%;
+  }
+
+  @include mq(sp) {
+    img {
+      width: 100%;
+    }
+  }
+
 }
