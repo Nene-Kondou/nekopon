@@ -600,3 +600,34 @@ body {
   margin-top: 40px;
 }
 
+
+// recruit
+.recruit {
+  width: 1110px;
+  max-width: 100%;
+  display: flex;
+  margin: auto;
+  top: 0;
+  background: #F7F7F7;
+}
+
+.section-recruit {
+  position: relative;
+  text-align: center;
+  width: 40.454545%;
+}
+
+.recruit-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.recruit-text {
+  margin-top: 30px;
+}
+
+.recruit-picture {
+  width: 60.454545%;
+}
