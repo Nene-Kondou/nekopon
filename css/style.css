@@ -595,19 +595,36 @@ body {
 
 .company {
   margin: auto;
-  padding: 0 15px;
   width: 1300px;
   max-width: 100%;
 }
 
+@media screen and (min-width: 768px) {
+  .company {
+    padding: 0 15px;
+  }
+}
+
 .company-box {
-  background: url(../img/bg-circle.png) no-repeat center/864px, url(../img/company-bg.jpg) no-repeat center/contain;
   height: 100vh;
   position: relative;
 }
 
+@media screen and (min-width: 768px) {
+  .company-box {
+    background: url(../img/bg-circle.png) no-repeat center/864px, url(../img/company-bg.jpg) no-repeat center/contain;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .company-box {
+    background: url(../img/bg-circle.png) no-repeat center/contain;
+  }
+}
+
 .company-content {
   position: absolute;
+  width: 78.666666%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
@@ -619,18 +636,7 @@ body {
   font-size: 40px;
   font-weight: bold;
   margin-top: 40px;
-  position: relative;
-}
-
-.company-title::before {
-  position: absolute;
-  content: "";
-  top: 34px;
-  right: -11px;
-  left: -11px;
-  height: 12px;
-  background: #F5F534;
-  z-index: -1;
+  line-height: 1.5;
 }
 
 .company-text {

@@ -545,19 +545,30 @@ body {
 // company
 .company {
   margin: auto;
-  padding: 0 15px;
   width: 1300px;
   max-width: 100%;
+  
+  @include mq(pc) {
+    padding: 0 15px;
+  }
 }
 
 .company-box {
-  background: url(../img/bg-circle.png) no-repeat center / 864px, url(../img/company-bg.jpg) no-repeat center / contain;
+  @include mq(pc) {
+    background: url(../img/bg-circle.png) no-repeat center / 864px, url(../img/company-bg.jpg) no-repeat center / contain ;
+  }
+
+  @include mq(sp) {
+    background: url(../img/bg-circle.png) no-repeat center / contain;
+  }
+
   height: 100vh;
   position: relative;
 }
 
 .company-content {
   position: absolute;
+  width: 78.666666%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -568,18 +579,20 @@ body {
   font-size: 40px;
   font-weight: bold;
   margin-top: 40px;
-  position: relative;
+  line-height: 1.5;
+  // position: relative;
   
-  &::before {
-    position: absolute;
-    content: "";
-    top: 34px;
-    right: -11px;
-    left: -11px;
-    height: 12px;
-    background: #F5F534;
-    z-index: -1;
-  }
+  // &::before {
+  //   position: absolute;
+  //   content: "";
+  //   display: inline-block;
+  //   top: 34px;
+  //   right: -11px;
+  //   left: -11px;
+  //   height: 12px;
+  //   background: #F5F534;
+  //   z-index: -1;
+  // }
 }
 
 .company-text {
