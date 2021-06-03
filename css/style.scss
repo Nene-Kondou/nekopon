@@ -680,20 +680,34 @@ body {
 // 
 .footer {
   background: #120E19;
-  padding: 60px 0;
+  padding: 60px 30px;
+
+  @include mq(sp) {
+    padding: 60px 30px 20px;
+  }
 }
 
 .footer-nav {
-  
+  @include mq(sp) {
+    margin: -20px -10px 0;
+  }
 }
 
 .footer-nav-list {
   display: flex;
   justify-content: center;
+
+  @include mq(sp) {
+    flex-wrap: wrap;
+  }
   
   li {
     &:not(:first-child) {
       margin-left: 30px;
+    }
+
+    @include mq(sp) {
+      margin: 20px 10px 0;
     }
 
     a {

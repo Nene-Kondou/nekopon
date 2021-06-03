@@ -735,7 +735,19 @@ body {
 
 .footer {
   background: #120E19;
-  padding: 60px 0;
+  padding: 60px 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 60px 30px 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-nav {
+    margin: -20px -10px 0;
+  }
 }
 
 .footer-nav-list {
@@ -747,8 +759,21 @@ body {
           justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-nav-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .footer-nav-list li:not(:first-child) {
   margin-left: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-nav-list li {
+    margin: 20px 10px 0;
+  }
 }
 
 .footer-nav-list li a {
