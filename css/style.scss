@@ -675,3 +675,37 @@ body {
     font-size: 14px;
   }
 }
+
+
+// 
+.footer {
+  background: #120E19;
+  padding: 60px 0;
+}
+
+.footer-nav {
+  
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: center;
+  
+  li {
+    &:not(:first-child) {
+      margin-left: 30px;
+    }
+
+    a {
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}
+
+.copy {
+  color: #A798B7;
+  text-align: center;
+  margin-top: 22px;
+  font-size: 10px;
+}

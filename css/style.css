@@ -732,3 +732,33 @@ body {
     font-size: 14px;
   }
 }
+
+.footer {
+  background: #120E19;
+  padding: 60px 0;
+}
+
+.footer-nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-nav-list li:not(:first-child) {
+  margin-left: 30px;
+}
+
+.footer-nav-list li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.copy {
+  color: #A798B7;
+  text-align: center;
+  margin-top: 22px;
+  font-size: 10px;
+}
