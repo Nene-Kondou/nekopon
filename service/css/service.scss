@@ -328,17 +328,13 @@ body {
 
 // service
 .service {
-  margin-top: 80px;
+  margin-top: 65px;
   
   @include mq(pc) {
-    margin: 140px auto 0;
+    margin: 70px auto 0;
     width: 1110px;
     max-width: 100%;
   }
-}
-
-.section-service {
-  text-align: center;
 }
 
 .service-content {
@@ -348,17 +344,14 @@ body {
 .service-list {
   padding: 0 20px;
   box-sizing: content-box;
-
-  @include mq(pc) {
-    display: flex;
-  }
 }
 
 .service-item {
   @include mq(pc) {
-    flex: 0 1 350px;
+    display: flex;
+
     &:not(:first-child) {
-      margin-left: 30px;
+      margin-top: 60px;
     }
   }
 
@@ -367,37 +360,38 @@ body {
       margin-top: 40px;
     }
   }
+}
+
+.service-picture {
+  width: 40.454545%;
 
   img {
     width: 100%;
   }
+}
 
-  .service-title {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 24px;
-
-    @include mq(sp) {
-      margin-top: 14px;
-    }
+.service-box {
+  @include mq(pc) {
+    width: 59.545454%;
+    padding-left: 50px;
   }
+} 
 
-  .service-text {
-    line-height: 1.8;
-    margin-top: 17px;
+.service-title {
+  font-size: 24px;
+  font-weight: bold;
 
-    @include mq(sp) {
-      margin-top: 10px;
-    }
+  @include mq(sp) {
+    margin-top: 14px;
   }
 }
 
-.service-btn {
-  text-align: center;
+.service-text {
+  line-height: 1.8;
+  margin-top: 17px;
 
   @include mq(sp) {
-    display: none;
+    margin-top: 10px;
   }
 }
 
