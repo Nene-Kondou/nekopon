@@ -328,81 +328,55 @@ body {
   }
 }
 
+// works
+.works {
+  width: 1110px;
+  max-width: 100%;
+  margin: 115px auto 0;
 
-// service
-.service {
-  margin-top: 65px;
-  
-  @include mq(pc) {
-    margin: 70px auto 0;
-    width: 1110px;
-    max-width: 100%;
+  @include mq(sp) {
+    margin: 65px auto 0;
   }
 }
 
-.service-content {
-  margin-top: 30px;
-}
-
-.service-list {
-  padding: 0 20px;
-  box-sizing: content-box;
-}
-
-.service-item {
+.works-list {
+  padding: 0 15px;
   @include mq(pc) {
     display: flex;
-
-    &:not(:first-child) {
-      margin-top: 60px;
-    }
+    flex-wrap: wrap;
   }
+}
 
+.works-item {
   @include mq(sp) {
     &:not(:first-child) {
       margin-top: 80px;
     }
-  }
-}
 
-.service-picture {
-  width: 40.454545%;
-
-  @include mq(sp) {
-    width: 100%;
+    img {
+      width: 100%;
+    }
   }
 
-  img {
-    width: 100%;
-  }
-}
-
-.service-box {
   @include mq(pc) {
-    width: 59.545454%;
-    padding-left: 50px;
-  }
-} 
-
-.service-title {
-  font-size: 24px;
-  font-weight: bold;
-
-  @include mq(sp) {
-    margin-top: 20px;
-    text-align: center;
+    width: calc(33.3% - 30px * 2 / 3);
+  
+    &:not(:nth-child(3n + 1)) { //3の倍数の次は無効
+      margin-left: 30px;
+    }
+  
+    &:nth-child(n + 4) { //4つ目以降有効
+      margin-top: 28px;
+    }
   }
 }
 
-.service-text {
-  line-height: 1.8;
-  margin-top: 20px;
-
-  @include mq(sp) {
-    margin-top: 15px;
-    font-size: 14px;
-  }
+.works-text {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 16px;
 }
+
 
 // contact
 .contact {
@@ -427,7 +401,7 @@ body {
 }
 
 
-// 
+// footer
 .footer {
   background: #120E19;
   padding: 60px 30px;
