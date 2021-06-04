@@ -413,7 +413,7 @@ body {
   max-width: 100%;
   margin: 40px auto 0;
   border: 1px solid #B8AED5;
-  padding: 60px 120x 80px;
+  padding: 60px 8.558558% 80px;
 }
 
 @media screen and (max-width: 767px) {
@@ -514,6 +514,47 @@ body {
 @media screen and (max-width: 767px) {
   .occupation-btn a {
     margin-top: 40px;
+  }
+}
+
+.movie {
+  margin-top: 140px;
+  font-size: 32px;
+  color: #391E88;
+}
+
+@media screen and (max-width: 767px) {
+  .movie {
+    margin-top: 80px;
+    font-size: 24px;
+  }
+}
+
+.section-movie {
+  text-align: center;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 767px) {
+  .section-movie {
+    font-size: 24px;
+  }
+}
+
+.movie-picture {
+  margin: 40px auto 0;
+  width: 1110px;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+.movie-picture img {
+  width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .movie-picture {
+    margin-top: 30px;
   }
 }
 

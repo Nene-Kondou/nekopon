@@ -407,7 +407,7 @@ body {
   max-width: 100%;
   margin: 40px auto 0;
   border: 1px solid #B8AED5;
-  padding: 60px 120x 80px;
+  padding: 60px 8.558558% 80px;
 
   @include mq(sp) {
     margin-top: 30px;
@@ -494,7 +494,41 @@ body {
   }
 }
 
+// movie
+.movie {
+  margin-top: 140px;
+  font-size: 32px;
+  color: $accent-color;
 
+  @include mq(sp) {
+    margin-top: 80px;
+    font-size: 24px;
+  }
+}
+
+.section-movie {
+  text-align: center;
+  font-size: 32px;
+
+  @include mq(sp) {
+    font-size: 24px; 
+  }
+}
+
+.movie-picture {
+  margin: 40px auto 0;
+  width: 1110px;
+  max-width: 100%;
+  padding: 0 20px;
+
+  img {
+    width: 100%;
+  }
+
+  @include mq(sp) {
+    margin-top: 30px; 
+  }
+}
 
 
 
