@@ -1,55 +1,11 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>nekopon</title>
-  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <header class="header">
-    <div class="header-logo">
-      <a href="#">PON DESIGN</a>
-    </div>
-    <div class="header-nav is-pc">
-      <ul class="header-nav-list">
-        <li><a href="#news">NEWS</a></li>
-        <li><a href="#service">SERVICE</a></li>
-        <li><a href="#works">WORKS</a></li>
-        <li><a href="#company">COMPANY</a></li>
-        <li><a href="#recuruit">RECRUIT</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </header>
-  <!-- header -->
-  <div class="drawer-icon">
-    <span class="drawer-bars">
-      <span class="drawer-bar"></span>
-      <span class="drawer-bar"></span>
-      <span class="drawer-bar"></span>
-    </span>
-  </div>
 
-  <div class="drawer-content-cover">
-    <ul>
-      <li><a href="#news">NEWS</a></li>
-      <li><a href="#service">SERVICE</a></li>
-      <li><a href="#works">WORKS</a></li>
-      <li><a href="#company">COMPANY</a></li>
-      <li><a href="#recuruit">RECRUIT</a></li>
-      <li><a href="#contact">CONTACT</a></li>
-    </ul>
-  </div>
-  <!-- /drawer-content -->
+<?php get_header(); ?>
 
   <div class="top">
     <div class="top-content">
       <h1 class="top-title">WEB<br class="is-sp"> DESIGN<br class="is-sp"> SPECIALIST</h1>
       <p class="top-text">お客様の夢を叶えるWebサイトを制作</p>
-      <div class="top-btn"><a href="./contact/contact.html">CONTACT</a></div>
+      <div class="top-btn"><a href="<?php echo get_template_directory_uri(); ?>/contact/contact.html">CONTACT</a></div>
     </div>
   </div>
   <!-- ./top -->
@@ -100,38 +56,38 @@
       <div class="service-content">
         <ul class="service-list">
           <li class="service-item">
-            <img src="./img/service1.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/service1.jpg" alt="">
             <p class="service-title">Webサイト制作</p>
             <p class="service-text">新規サイトの制作はもちろんサイトリニューアルやランディングページの制作も可能です。</p>
           </li>
           <li class="service-item">
-            <img src="./img/service2.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/service2.jpg" alt="">
             <p class="service-title">Webサイト運用</p>
             <p class="service-text">サイトの更新作業や独自のアクセス解析に基づいたサイト改善のご提案をいたします。</p>
           </li>
           <li class="service-item">
-            <img src="./img/service3.jpg" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/service3.jpg" alt="">
             <p class="service-title">アプリ開発</p>
             <p class="service-text">スマートフォンアプリ開発の他、Vue.jsやReactによるWebアプリの開発が可能です。</p>
           </li>
         </ul>
-        <div class="util-btn service-btn"><a href="./service/service.html">MORE</a></div>
+        <div class="util-btn service-btn"><a href="<?php echo get_template_directory_uri(); ?>/service/service.html">MORE</a></div>
       </div>
     </section>
     <!-- ./service -->
 
     <section class="works" id="works">
       <div class="work-slider">
-        <img src="./img/works.jpg" alt="">
-        <img src="./img/works2.jpg" alt="">
-        <img src="./img/works3.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/works.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/works2.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/works3.jpg" alt="">
       </div>
       <div class="work-box">
         <div class="work-content">
           <h2 class="section-title section-work-title">WORKS</h2>
           <p class="section-text section-work-text">制作実績</p>
           <p class="work-text">様々なジャンルのWebサイト制作が可能です。<br>ご購入やお申込み数の増加などを実現します！</p>
-          <div class="util-btn"><a href="./works/works.html">MORE</a></div>
+          <div class="util-btn"><a href="<?php echo get_template_directory_uri(); ?>/works/works.html">MORE</a></div>
         </div>
       </div>
     </section>
@@ -148,7 +104,7 @@
             だからこそちゃんと成果を出すサイトを全力でお作りします。<br>
             お客様の笑顔を見たい。<br>
             夢を実現する手助けをさせてください。</p>
-            <div class="util-btn"><a href="./company/company.html">MORE</a></div>
+            <div class="util-btn"><a href="<?php echo get_template_directory_uri(); ?>/company/company.html">MORE</a></div>
         </div>
       </div>
     </section>
@@ -156,14 +112,14 @@
 
     <section class="recruit" id="recruit">
       <div class="recruit-picture">
-        <img src="./img/recruit.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/recruit.jpg" alt="">
       </div>
       <div class="section-recruit">
         <div class="recruit-content">
           <h2 class="section-title">RECRUIT</h2>
           <p class="section-text">採用情報</p>
           <p class="recruit-text">私たちと一緒に働きませんか？</p>
-          <div class="util-btn"><a href="./recruit/recruit.html">MORE</a></div>
+          <div class="util-btn"><a href="<?php echo get_template_directory_uri(); ?>/recruit/recruit.html">MORE</a></div>
         </div>
       </div>
     </section>
@@ -173,29 +129,10 @@
       <h2 class="section-title">CONTACT</h2>
       <p class="section-text">お問い合わせ</p>
       <p class="contact-text">Webサイトの制作のご依頼やお見積りなど、お気軽にご相談ください。</p>
-      <div class="util-btn"><a href="./contact/contact.html">MORE</a></div>
+      <div class="util-btn"><a href="<?php echo get_template_directory_uri(); ?>/contact/contact.html">MORE</a></div>
     </section>
     <!-- ./contact -->
   </main>
 
-  <footer class="footer">
-    <div class="footer-nav">
-      <ul class="footer-nav-list">
-        <li><a href="#news">NEWS</a></li>
-        <li><a href="./service/service.html">SERVICE</a></li>
-        <li><a href="./works/works.html">WORKS</a></li>
-        <li><a href="./company/company.html">COMPANY</a></li>
-        <li><a href="./recruit/recruit.html">RECRUIT</a></li>
-        <li><a href="./contact/contact.html">CONTACT</a></li>
-      </ul>
-    </div>
-    <p class="copy">&copy;PON DESIGN</p>
-  </footer>
 
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <!-- JavaScript -->
-  <script src="js/main.js"></script>
-</body>
-</html>
+  <?php get_footer(); ?>
