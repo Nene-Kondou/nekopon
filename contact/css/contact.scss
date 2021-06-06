@@ -333,6 +333,10 @@ body {
 .contact {
   padding: 0 20px;
   margin-bottom: 70px;
+
+  @include mq(sp) {
+    margin-bottom: 40px;
+  }
 }
 
 .contact-text {
@@ -357,9 +361,6 @@ body {
     padding: 30px;
     margin: 30px auto 0;
   }
-}
-
-.contact-list {
 }
 
 .contact-item {
@@ -387,10 +388,16 @@ body {
       font-weight: normal;
     }
   }
+}
 
-  dt {
+.contact-radio {
+  @include mq(sp) {
+    margin-top: 15px;
+  } 
 
-  }
+  @include mq(pc) {
+    display: inline;
+  } 
 }
 
 .contact-btn {

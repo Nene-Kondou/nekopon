@@ -330,6 +330,12 @@ body {
   margin-bottom: 70px;
 }
 
+@media screen and (max-width: 767px) {
+  .contact {
+    margin-bottom: 40px;
+  }
+}
+
 .contact-text {
   text-align: center;
   margin-top: 115px;
@@ -380,6 +386,18 @@ body {
   font-size: 12px;
   margin-left: 5px;
   font-weight: normal;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-radio {
+    margin-top: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-radio {
+    display: inline;
+  }
 }
 
 .contact-btn {
